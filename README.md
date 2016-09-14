@@ -18,22 +18,33 @@ This website is a game of Rock Paper Scissors. Players choose an option and the 
 
 ## Specifications
 
+* If Player 1 chooses Rock & Player 2 chooses Scissors, Player 1 wins
+    * Example input: Rock & Scissors
+    * Example output: Player 1
+
+* If Player 1 chooses Paper & Player 2 chooses Rock, Player 1 wins
+    * Example input: Paper & Rock
+    * Example output: Player 1
+
+* If Player 1 chooses Scissors & Player 2 chooses Paper, Player 1 wins
+    * Example input: Scissors & Paper
+    * Example output: Player 1
+
+* If Player 1 chooses Scissors & Player 2 chooses Rock, Player 2 wins
+    * Example input: Scissors & Rock
+    * Example output: Player 2
+
+* If Player 1 chooses Rock & Player 2 chooses Paper, Player 2 wins
+    * Example input: Rock & Paper
+    * Example output: Player 2
+
+* If Player 1 chooses Paper & Player 2 chooses Scissors, Player 2 wins
+    * Example input: Paper & Scissors
+    * Example output: Player 2
+
 * If both players choose the same option, it's a draw.
     * Example input: Paper & Paper
     * Example output: Draw
-
-* If players choose Rock and Paper, Paper wins
-    * Example input: Rock & Paper
-    * Example output: Paper wins
-
-* If players choose Paper and Scissors, Scissors wins
-    * Example input: Paper & Scissors
-    * Example output: Scissors wins
-
-* If players choose Scissors and Rock, Rock wins
-    * Example input: Scissors & Rock
-    * Example output: Rock wins
-
 
 ## Known Bugs
 
