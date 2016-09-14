@@ -16,6 +16,9 @@ h1 {
     font-family: 'Bungee', cursive;
     font-size: 75px;
 }
+#hide1, #hide2 {
+    display: none;
+}
 
 .btn, .btn:active, .btn:focus {
     outline: none;
