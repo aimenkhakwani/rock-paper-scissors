@@ -20,7 +20,32 @@
             } else {
                 $winner = "Draw";
             }
-            return $winner;
+            return array($winner, $player1, $player2);
+        }
+
+        function onePlayer($player)
+        {
+            $options = array('Rock', 'Paper', 'Scissors');
+            $random = $options[rand(0,2)];
+
+            if($player == "Rock" && $random == "Scissors") {
+                $winner = "Player";
+            } elseif ($player == "Paper" && $random == "Rock") {
+                $winner = "Player";
+            } elseif ($player == "Scissors" && $random == "Paper") {
+                $winner = "Player";
+            } elseif ($random == "Rock" && $player == "Scissors") {
+                $winner = "Computer";
+            } elseif ($random == "Paper" && $player == "Rock") {
+                $winner = "Computer";
+            } elseif ($random == "Scissors" && $player == "Paper") {
+                $winner = "Computer";
+            } elseif ($player == "") {
+                $winner = "None";
+            } else {
+                $winner = "Draw";
+            }
+            return array($winner, $player, $random);
         }
     }
 ?>

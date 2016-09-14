@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='assets/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Comfortaa" rel="stylesheet">
+    <link href='assets/css/styles.css' rel='stylesheet' type='text/css'>
+    <script src='assets/js/jquery-3.1.0.min.js'></script>
+    <script src='assets/js/scripts.js'></script>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <h2>Player Vs. Computer</h2>
+        <br>
+        <form action='/outcomeOne' method='get'>
+            <div class='row'>
+                <div class="player col-md-6 col-md-offset-3">
+                    <h3>Player</h3>
+                    <button type="button" class="btn_player1 btn btn-lg btn-primary">Rock</button>
+                    <button type="button" class="btn_player1 btn btn-lg btn-warning">Paper</button>
+                    <button type="button" class="btn_player1 btn btn-lg btn-danger">Scissors</button>
+                    <input id="input_player1" name='input_player1' type="hidden">
+                    <h4 id="hide1">Selection registered</h4>
+                </div>
+            </div>
+            <div class='row'>
+                <button type="submit" class="btn btn-success btn-lg">Go!</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

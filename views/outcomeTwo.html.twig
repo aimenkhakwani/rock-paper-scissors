@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='assets/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Comfortaa" rel="stylesheet">
+    <link href='assets/css/styles.css' rel='stylesheet' type='text/css'>
+    <script src='assets/js/jquery-3.1.0.min.js'></script>
+    <script src='assets/js/scripts.js'></script>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <h2>
+            {% if winner[0] == 'Player 1' %}
+                Player 1 wins this round!
+            {% elseif winner[0] == 'Player 2' %}
+                Player 2 wins this round!
+            {% elseif winner[0] == 'None' %}
+                Please take this seriously!
+            {% else %}
+                It's a draw!
+            {% endif %}
+        </h2>
+        <br>
+        {% if winner[0] != 'None' %}
+            <h4>Player 1 chose: <img src='assets/img/{{ winner[1] }}.png'></h4>
+            <h4>Player 2 chose: <img src='assets/img/{{ winner[2] }}.png'></h4>
+            <br>
+        {% endif %}
+        <form action='/twoPlayer' method='get'>
+            <button type='submit' class='btn-lg btn btn-info'>Play Again</button>
+        </form>
+        <form action='/' method='get'>
+            <button type='submit' class='btn-lg btn btn-info'>Home</button>
+        </form>
+    </div>
+</body>
+</html>
