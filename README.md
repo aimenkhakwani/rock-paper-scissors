@@ -6,7 +6,7 @@
 
 ## Description
 
-This website is a game of Rock Paper Scissors. Players choose an option and the game will calculate the winner.
+This website is a game of Rock Paper Scissors. It has a one player option as well as two player. Players choose an option and play! The game will calculate the winner.
 
 <img src='web/assets/img/specs.png'>
 
