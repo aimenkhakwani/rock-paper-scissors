@@ -8,6 +8,8 @@
 
 This website is a game of Rock Paper Scissors. Players choose an option and the game will calculate the winner.
 
+<img src='web/assets/img/specs.png'>
+
 ## Setup/Installation Requirements
 
 * Clone the repository
